@@ -5,6 +5,6 @@ layout: home
 I'm a developer focusing on machine learning and game design. 
 
 ### Explore my work:
-- Explore my **[Games](/games/)**
-- Check out my **[Apps & Tools](/apps/)**
-- Check out **[AI & Machine Learning](/models/)**
+- **[Games](/games/)**
+- **[Apps & Tools](/apps/)**
+- **[AI & Machine Learning](/models/)**
