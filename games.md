@@ -2,8 +2,8 @@
 layout: page
 title: Games
 permalink: /games/
-nav_order: 1
 ---
+
 ## The Labyrinth
 **Description:** Simple summary of the game mechanics.
 - **Engine:** Pygame / Unity.

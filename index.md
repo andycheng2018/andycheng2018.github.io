@@ -1,7 +1,5 @@
 ---
 layout: home
-title: Welcome
-nav_exclude: true
 ---
 
 I'm a developer focusing on machine learning and game design. 

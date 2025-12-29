@@ -17,9 +17,9 @@ minima:
     - apps.md
     - models.md
 
+show_excerpts: false
+
 minima:
   skin: dark
 
 hide_site_feed_link: true
-feed:
-  path: false
