@@ -1,7 +1,7 @@
 remote_theme: jekyll/minima
-skin: dark
-title: Andys Portfolio
-description: "A showcase of my AI models and game development projects."
+title: Andy's Portfolio
+description: ""
+minima_skin: dark
 
 header_pages:
   - games.md
