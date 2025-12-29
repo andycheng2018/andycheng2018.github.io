@@ -11,10 +11,11 @@ plugins:
 
 minima_skin: dark
 
-nav_pages:
-  - games.md
-  - apps.md
-  - models.md
+minima:
+  nav_pages:
+    - games.md
+    - apps.md
+    - models.md
 
 minima:
   skin: dark
