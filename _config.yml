@@ -23,3 +23,6 @@ minima:
   skin: dark
 
 hide_site_feed_link: true
+
+feed:
+  path: false
