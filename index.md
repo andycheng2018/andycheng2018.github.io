@@ -1,4 +1,3 @@
-# Welcome
 I'm a developer focusing on machine learning and game design. 
 
 ### Explore my work:
