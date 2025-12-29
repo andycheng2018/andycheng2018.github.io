@@ -1,6 +1,7 @@
 remote_theme: jekyll/minima
 title: Andys Portfolio
-description: description
+description: "A showcase of my AI models and game development projects."
+
 header_pages:
   - games.md
   - apps.md
