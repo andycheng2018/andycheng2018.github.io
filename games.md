@@ -7,7 +7,9 @@ permalink: /games/
 ## The Labyrinth
 **Description:** Simple summary of the game mechanics.
 - **Engine:** Pygame / Unity.
-!(The_Labyrinth.png)
+
+![Screenshot of The Labyrinth](The_Labyrinth.png)
+
 - [Play Demo / View Code](https://github.com/andycheng2018/The-Labyrinth)
 
 ## Mecha Smash
