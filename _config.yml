@@ -1,3 +1,7 @@
 remote_theme: jekyll/minima
-title: Your Portfolio Name
+title: Andys Portfolio
 description: description
+header_pages:
+  - games.md
+  - models.md
+  - about.md
