@@ -66,7 +66,7 @@ order: 1
 <div style="max-width: 900px; margin: 20px auto;">
   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; border: 2px solid #808080; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
     <img 
-      src="biodrift_banner.png" 
+      src="{{https://github.com/andycheng2018/andycheng2018.github.io}} biodrift_banner.png" 
       alt="Biodrift"
       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
     >
