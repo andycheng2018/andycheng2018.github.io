@@ -57,11 +57,25 @@ permalink: /games/
 </a>
 
 ## Biodrift
-**Description:** Simple summary of the game mechanics.
-- **Engine:** Pygame / Unity.
-- [Play Demo / View Code](https://github.com/andycheng2018/Biodrift)
 
-## Loop Game Jam
-**Description:** Simple summary of the game mechanics.
-- **Engine:** Pygame / Unity.
-- [Play Demo / View Code](https://github.com/hackerzilla/LOOP-game-jam)
+**Description:** Ambitious multiplayer procedural survival game prototype featuring monsters, building, and crafting, developed in Unity using C#.
+
+**Status:** Experimental prototype with limited polish.
+
+<div style="max-width: 900px; margin: 20px auto;">
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; border: 2px solid #808080; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+    <img 
+      src="The_Labyrinth.png" 
+      alt="Biodrift" 
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
+    >
+  </div>
+</div>
+
+<a href="https://deleter2435.itch.io/biodrift" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #1b2838; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-right: 10px;">
+  Available on Itch.io
+</a>
+
+<a href="https://github.com/andycheng2018/Biodrift?tab=readme-ov-file" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #333; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+  View Source Code
+</a>
