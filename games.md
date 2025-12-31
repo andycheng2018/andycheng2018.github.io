@@ -8,7 +8,8 @@ permalink: /games/
 
 **Competitive multiplayer platformer game built with Unity, C#, and Steamworks SDK**
 
-![Screenshot of The Labyrinth](The_Labyrinth.png){: style="border: 2px solid #808080ff; border-radius: 10px;"}
+[![The Labyrinth Gameplay Trailer](https://img.youtube.com/vi/DdZKDHxc2vs/maxresdefault.jpg)](https://www.youtube.com/watch?v=DdZKDHxc2vs)
+
 
 <a href="https://store.steampowered.com/app/2664560/The_Labyrinth/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #1b2838; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-right: 10px;">
   Available on Steam
@@ -19,7 +20,7 @@ permalink: /games/
 </a>
 
 ## Mecha Smash
-**Description:** Simple summary of the game mechanics.
+
 - **Engine:** Pygame / Unity.
 - [Play Demo / View Code](https://hackerzilla.itch.io/mecha-smash)
 
