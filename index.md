@@ -2,15 +2,13 @@
 layout: home
 ---
 
-# Developer & Designer
-
-I am a developer specializing in the intersection of **Machine Learning** and **Interactive Game Design**. I build data-driven systems and immersive experiences using Unity, C#, and Python.
+I am an undergrad student at UC Berkeley majoring in EECS.
 
 ---
 
 ### Portfolio Categories
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-top: 20px;">
 
   <a href="{{ '/games/' | relative_url }}" style="text-decoration: none; color: inherit;">
     <div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; transition: 0.3s; height: 100%;" onmouseover="this.style.borderColor='#1b2838'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='#ddd'; this.style.boxShadow='none'">
@@ -37,8 +35,3 @@ I am a developer specializing in the intersection of **Machine Learning** and **
   </a>
 
 </div>
-
----
-
-### Connect with Me
-[GitHub](https://github.com/andycheng2018) | [LinkedIn](#) | [Email](mailto:your-email@example.com)
