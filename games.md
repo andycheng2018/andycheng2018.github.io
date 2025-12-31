@@ -6,7 +6,7 @@ permalink: /games/
 
 ## The Labyrinth
 
-**Competitive multiplayer platformer game built with Unity, C#, and Steamworks SDK.**
+**Description:** Competitive multiplayer platformer game built with Unity, C#, and Steamworks SDK.
 
 <div style="max-width: 900px; margin: 20px auto;">
   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; border: 2px solid #808080;">
@@ -32,15 +32,15 @@ permalink: /games/
 
 ## Mecha Smash
 
-**Smash Bros–style competitive fighting game developed by a small team using Unity and C#.**
-**Role: Ability systems. VFX & Shaders. 4-player controller input**
-**Note: Source code is private due to team ownership**
+**Description:** Smash Bros–style competitive fighting game developed by a small team using Unity and C#.
+**Role:** Ability systems development; visual effects and shader creation; four-player controller input implementation.
+**Note:** Source code is private due to team ownership.
 
 <div style="max-width: 900px; margin: 20px auto;">
   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; border: 2px solid #808080;">
     <iframe
-      src="https://www.youtube.com/embed/a-d-962-4xw&t=63s"
-      title="Mecha Smash Gameplay Trailer"
+      src="https://www.youtube.com/embed/a-d-962-4xw?start=63"
+      title="The Labyrinth Gameplay"
       frameborder="0"
       referrerpolicy="strict-origin-when-cross-origin"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
