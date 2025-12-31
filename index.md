@@ -1,6 +1,5 @@
 ---
 layout: home
-title: "About Me"
 ---
 
 I am an undergrad student at UC Berkeley majoring in EECS.
