@@ -33,7 +33,9 @@ permalink: /games/
 ## Mecha Smash
 
 **Description:** Smash Bros–style competitive fighting game developed by a small team using Unity and C#.
+
 **Role:** Ability systems development; visual effects and shader creation; four-player controller input implementation.
+
 **Note:** Source code is private due to team ownership.
 
 <div style="max-width: 900px; margin: 20px auto;">
