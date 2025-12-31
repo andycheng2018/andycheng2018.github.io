@@ -8,7 +8,7 @@ I am an undergrad student at UC Berkeley majoring in EECS.
 
 ### Portfolio Categories
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 70px; margin-top: 20px;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 100px; margin-top: 20px;">
 
   <a href="{{ '/games/' | relative_url }}" style="text-decoration: none; color: inherit;">
     <div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; transition: 0.3s; height: 100%;" onmouseover="this.style.borderColor='#1b2838'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='#ddd'; this.style.boxShadow='none'">

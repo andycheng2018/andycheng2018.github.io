@@ -16,6 +16,8 @@ minima:
     - games.md
     - apps.md
     - models.md
+  social_links:
+    rss: none
 
 show_excerpts: false
 
