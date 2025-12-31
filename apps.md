@@ -2,6 +2,7 @@
 layout: page
 title: Apps & Tools
 permalink: /apps/
+order: 2
 ---
 
 ## SwiftTasks

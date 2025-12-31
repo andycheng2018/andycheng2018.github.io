@@ -2,6 +2,7 @@
 layout: page
 title: AI & Machine Learning
 permalink: /models/
+order: 3
 ---
 
 ## Car Price Prediction
