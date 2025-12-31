@@ -5,13 +5,11 @@ permalink: /games/
 ---
 
 ## The Labyrinth
-**Description:** Simple summary of the game mechanics.
-- **Engine:** Pygame / Unity.
+Competitive multiplayer platformer game built with Unity, C#, and Steamworks SDK
 
 ![Screenshot of The Labyrinth](The_Labyrinth.png){: style="border: 2px solid #808080ff; border-radius: 10px;"}
 
-<a href="https://store.steampowered.com/app/YOUR_ID" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #1b2838; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-right: 10px;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" width="20" style="vertical-align: middle; margin-right: 8px;"> 
+<a href="https://store.steampowered.com/app/2664560/The_Labyrinth/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #1b2838; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-right: 10px;">
   Available on Steam
 </a>
 
