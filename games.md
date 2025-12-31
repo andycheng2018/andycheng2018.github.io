@@ -5,7 +5,8 @@ permalink: /games/
 ---
 
 ## The Labyrinth
-Competitive multiplayer platformer game built with Unity, C#, and Steamworks SDK
+
+**Competitive multiplayer platformer game built with Unity, C#, and Steamworks SDK**
 
 ![Screenshot of The Labyrinth](The_Labyrinth.png){: style="border: 2px solid #808080ff; border-radius: 10px;"}
 
