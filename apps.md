@@ -21,6 +21,9 @@ order: 2
   </div>
 </div>
 
-<a href="https://github.com/andycheng2018/SwiftTasks/tree/main" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #333; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
-  View Source Code
-</a>
+
+<div style="text-align: center; margin: 20px 0;">
+  <a href="https://github.com/andycheng2018/SwiftTasks/tree/main" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #333; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: 0.3s;" onmouseover="this.style.background='#555'" onmouseout="this.style.background='#333'">
+    View Source Code
+  </a>
+</div>
