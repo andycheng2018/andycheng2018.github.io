@@ -11,16 +11,16 @@ permalink: /games/
 <div style="max-width: 900px; margin: 20px auto;">
   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; border: 2px solid #808080;">
     <iframe
-      src="https://www.youtube.com/embed/YDdZKDHxc2vs"
+      src="https://www.youtube.com/embed/DdZKDHxc2vs"
       title="The Labyrinth Gameplay Trailer"
       frameborder="0"
+      referrerpolicy="strict-origin-when-cross-origin"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
     </iframe>
   </div>
 </div>
-
 
 <a href="https://store.steampowered.com/app/2664560/The_Labyrinth/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #1b2838; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-right: 10px;">
   Available on Steam
