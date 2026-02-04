@@ -10,10 +10,10 @@ order: 3
 **Description:** Analyzed large-scale NASA time-series signal data from TESS mission using Python, focusing on feature extraction, noise filtering, and statistical validation.
 
 **Key Contributions:**
-- Processed large-scale time-series datasets using Python and AstroImageJ  
-- Extracted signal features from stellar light curves for candidate classification  
-- Performed data validation and noise filtering on real scientific datasets  
-- Co-authored a 10-page research paper under faculty mentorship  
+- Analyzed stellar light curves using Python and AstroImageJ to identify exoplanet candidates from TESS data
+- Processed and validated astronomical datasets, contributing to follow-up analysis that ruled out false positives among TESS exoplanet candidates.
+- Co-authored a 10-page research paper with faculty guidance from Dr. Peter Plavchan
+
 
 **Tools & Technologies:**  
 Python, AstroImageJ, time-series analysis, data preprocessing, scientific visualization
@@ -23,7 +23,7 @@ Python, AstroImageJ, time-series analysis, data preprocessing, scientific visual
     <img 
       src="{{ '/GMU_NASA_LIGHT_CURVES.png' | relative_url }}" 
       alt="Biodrift"
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;"
     >
   </div>
 </div>
