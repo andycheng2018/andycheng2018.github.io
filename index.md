@@ -2,7 +2,7 @@
 layout: home
 ---
 
-I am an undergrad student at UC Berkeley majoring in EECS.
+I’m an EECS undergraduate at UC Berkeley focused on building apps, games, and data-driven systems.
 
 ---
 
