@@ -23,7 +23,7 @@ order: 2
   </div>
 </div>
 
-<a href="https://bit.ly/4c8s6Vq" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #333; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+<a href="https://majorgameberkeley.framer.website/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #333; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
   View Website
 </a>
 
