@@ -7,12 +7,7 @@ order: 4
 
 ## RGB Matrix Music Visualizer
 
-**Description:** Real-time music visualizer running on a Raspberry Pi 4 with a 64×64 RGB LED matrix. Captures live audio from a microphone, runs a Fast Fourier Transform to extract frequency data, and maps it to a rainbow spectrum of animated bars across the panel.
-
-**Tech Stack:**
-- Raspberry Pi 4 + HUB75 64×64 RGB LED Matrix
-- Python (`pyaudio`, `numpy`, `rgbmatrix`)
-- FFT-based frequency bucketing with logarithmic spacing
+**Description:** A real-time music visualizer running on a Raspberry Pi 4 with a 64×64 RGB LED matrix. Captures audio from a microphone, runs a Fast Fourier Transform to convert raw bytes to frequency data, and maps it to a rainbow spectrum of animated bars on the matrix.
 
 <div style="max-width: 600px; margin: 20px auto;">
   <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden; border-radius: 12px; border: 2px solid #808080; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
