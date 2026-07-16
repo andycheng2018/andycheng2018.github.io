@@ -13,10 +13,10 @@ minima_skin: dark
 
 minima:
   nav_pages:
-    - games.md
-    - apps.md
-    - models.md
+    - robotics.md
     - hardware.md
+    - apps.md
+    - games.md
   social_links:
     rss: none
 

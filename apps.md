@@ -2,7 +2,7 @@
 layout: page
 title: Apps & Tools
 permalink: /apps/
-order: 2
+order: 3
 ---
 
 ## Choose Your Major At Berkeley Website
