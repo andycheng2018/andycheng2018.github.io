@@ -2,7 +2,7 @@
 layout: page
 title: Hardware
 permalink: /hardware/
-order: 2
+order: 4
 ---
 
 ## RGB Matrix Music Visualizer
