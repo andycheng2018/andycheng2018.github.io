@@ -1,7 +1,7 @@
 title: Andy's Portfolio
 author:
-   name: Andy Cheng
-   email: andy_cheng@berkeley.edu
+  name: Andy Cheng
+  email: andy_cheng@berkeley.edu
 description: ""
 
 remote_theme: jekyll/minima@d4d779a
@@ -10,13 +10,12 @@ plugins:
   - jekyll-seo-tag
 
 minima_skin: dark
-
 minima:
   nav_pages:
-    - robotics.md
-    - hardware.md
-    - apps.md
     - games.md
+    - apps.md
+    - models.md
+    - hardware.md
   social_links:
     rss: none
 
