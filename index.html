@@ -316,6 +316,16 @@
     color: var(--signal);
   }
 
+  .proj-status {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--signal);
+    border: 1px solid var(--signal-dim);
+    padding: 5px 9px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+
   /* ---------- category grid (landing) ---------- */
   .cat-grid {
     display: grid;
@@ -418,7 +428,7 @@
       </div>
       <nav>
         <a href="#robotics">Robotics &amp; AI</a>
-        <a href="#hardware">Hardware</a>
+        <a href="#devices">Devices</a>
         <a href="#games">Games</a>
       </nav>
     </div>
@@ -426,7 +436,7 @@
 
   <section class="hero">
     <h1>Things I've Built</h1>
-    <p>A collection of projects across software, games, hardware, machine learning, and robotics.</p>
+    <p>A collection of projects across robotics, AI, devices, and games.</p>
   </section>
 
   <section class="section portfolio-overview">
@@ -443,9 +453,9 @@
         <div class="cat-link">View projects →</div>
       </a>
 
-      <a class="cat-card" href="#hardware">
+      <a class="cat-card" href="#devices">
         <div class="cat-num">02</div>
-        <div class="cat-title">Hardware &amp; Devices</div>
+        <div class="cat-title">Devices</div>
         <div class="cat-desc">Custom gadgets, electronics, embedded systems, and physical prototypes.</div>
         <div class="cat-link">View projects →</div>
       </a>
@@ -468,107 +478,105 @@
     <div class="project-list">
       <div class="project">
         <div>
-          <div class="proj-name">Autonomous Robot Agent</div>
+          <div class="proj-name">LeRobot Arm</div>
+          <div class="proj-sub">2026 — Work in Progress</div>
+        </div>
+        <div>
+          <div class="proj-desc">Training a robotic arm through imitation learning to complete vision-guided pick-and-place tasks.</div>
+          <div class="proj-tags">
+            <span class="tag">LeRobot</span>
+            <span class="tag">Imitation Learning</span>
+            <span class="tag">Computer Vision</span>
+          </div>
+        </div>
+        <div class="proj-actions">
+          <span class="proj-status">In progress</span>
+        </div>
+      </div>
+
+      <div class="project">
+        <div>
+          <div class="proj-name">Natural Voice Robot Command</div>
+          <div class="proj-sub">2026 — Qbay Internship</div>
+        </div>
+        <div>
+          <div class="proj-desc">A voice and text interface that turns natural-language instructions into safety-checked robot actions.</div>
+          <div class="proj-tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">LLMs</span>
+            <span class="tag">Robotics</span>
+            <span class="tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="proj-actions">
+          <a class="proj-link" href="https://github.com/andycheng2018/natural-language-robot-agent" target="_blank" rel="noopener noreferrer">Repo →</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div>
+          <div class="proj-name">AI Receptionist</div>
           <div class="proj-sub">2026 — Personal Project</div>
         </div>
         <div>
-          <div class="proj-desc">A placeholder for a robotics project involving autonomous task execution, command planning, and safety checks.</div>
-          <div class="proj-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Robotics</span>
-            <span class="tag">AI Agents</span>
-          </div>
-        </div>
-        <div class="proj-link">Repo →</div>
-      </div>
-
-      <div class="project">
-        <div>
-          <div class="proj-name">Computer Vision Pickup</div>
-          <div class="proj-sub">2026 — Experimental Build</div>
-        </div>
-        <div>
-          <div class="proj-desc">A placeholder for a vision-guided robot that detects an object, aligns itself, and completes a pickup task.</div>
-          <div class="proj-tags">
-            <span class="tag">OpenCV</span>
-            <span class="tag">Control</span>
-            <span class="tag">Vision</span>
-          </div>
-        </div>
-        <div class="proj-link">Demo →</div>
-      </div>
-
-      <div class="project">
-        <div>
-          <div class="proj-name">Offline Mission Planner</div>
-          <div class="proj-sub">2026 — Systems Project</div>
-        </div>
-        <div>
-          <div class="proj-desc">A placeholder for a system that compiles robot commands into a mission that can continue without network access.</div>
+          <div class="proj-desc">A conversational receptionist that answers business questions, qualifies customers, and saves structured leads.</div>
           <div class="proj-tags">
             <span class="tag">FastAPI</span>
-            <span class="tag">Planning</span>
-            <span class="tag">Resilience</span>
+            <span class="tag">OpenAI</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Twilio</span>
           </div>
         </div>
-        <div class="proj-link">Writeup →</div>
+        <div class="proj-actions">
+          <a class="proj-link" href="https://github.com/andycheng2018/ai-receptionist" target="_blank" rel="noopener noreferrer">Repo →</a>
+          <a class="proj-link" href="https://ai-receptionist-ugk0.onrender.com/" target="_blank" rel="noopener noreferrer">Demo →</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="hardware">
+  <section class="section" id="devices">
     <div class="section-head">
-      <div class="section-title"><span class="idx">02</span>Hardware &amp; Devices</div>
-      <div class="section-count">3 projects</div>
+      <div class="section-title"><span class="idx">02</span>Devices</div>
+      <div class="section-count">2 projects</div>
     </div>
 
     <div class="project-list">
       <div class="project">
         <div>
-          <div class="proj-name">3×3 Macro Pad</div>
-          <div class="proj-sub">2026 — Solo Build</div>
+          <div class="proj-name">Custom Macro Keypad</div>
+          <div class="proj-sub">2026 — Work in Progress</div>
         </div>
         <div>
-          <div class="proj-desc">A placeholder for a custom macro pad with mechanical switches, a rotary encoder, indicator LEDs, and a 3D-printed case.</div>
+          <div class="proj-desc">Designing and building a custom 3×3 macro keypad with mechanical switches, LEDs, and a 3D-printed enclosure.</div>
           <div class="proj-tags">
             <span class="tag">Arduino</span>
             <span class="tag">Fusion 360</span>
             <span class="tag">Electronics</span>
+            <span class="tag">3D Printing</span>
           </div>
         </div>
-        <div class="proj-link">Build Log →</div>
+        <div class="proj-actions">
+          <span class="proj-status">In progress</span>
+        </div>
       </div>
 
       <div class="project">
         <div>
-          <div class="proj-name">Custom Sensor Device</div>
-          <div class="proj-sub">2026 — Prototype</div>
+          <div class="proj-name">RGB Matrix Music Visualizer</div>
+          <div class="proj-sub">Hardware Project</div>
         </div>
         <div>
-          <div class="proj-desc">A placeholder for an embedded device that collects sensor readings and displays or transmits useful data.</div>
+          <div class="proj-desc">A real-time music visualizer that turns audio into responsive animations on an RGB LED matrix.</div>
           <div class="proj-tags">
-            <span class="tag">Microcontroller</span>
-            <span class="tag">Sensors</span>
-            <span class="tag">C/C++</span>
+            <span class="tag">RGB Matrix</span>
+            <span class="tag">Audio Processing</span>
+            <span class="tag">Embedded Systems</span>
           </div>
         </div>
-        <div class="proj-link">Details →</div>
-      </div>
-
-      <div class="project">
-        <div>
-          <div class="proj-name">LED Circuit Study</div>
-          <div class="proj-sub">2026 — Electronics Study</div>
+        <div class="proj-actions">
+          <a class="proj-link" href="https://github.com/andycheng2018/rgb-matrix-music-visualizer" target="_blank" rel="noopener noreferrer">Repo →</a>
         </div>
-        <div>
-          <div class="proj-desc">A placeholder for a small electronics project exploring voltage, current, resistors, and different LED configurations.</div>
-          <div class="proj-tags">
-            <span class="tag">Breadboard</span>
-            <span class="tag">Circuits</span>
-            <span class="tag">Testing</span>
-          </div>
-        </div>
-        <div class="proj-link">Notes →</div>
       </div>
     </div>
   </section>
@@ -642,10 +650,10 @@
 
   <footer>
     <div class="footer-links">
-      <a href="#">GitHub</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Resume</a>
-      <a href="#">Email</a>
+      <a href="https://github.com/andycheng2018" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/andy-cheng25" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://docs.google.com/document/d/1CCbnUsrfVQCS2Itmqs0VsEyFdnpdDR3wSRyxxa7C6Ws/edit?tab=t.0" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a href="mailto:andy_cheng@berkeley.edu">Email</a>
     </div>
     <div class="footer-note">Berkeley, CA — updated Jul 2026</div>
   </footer>
