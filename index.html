@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andy — EECS Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0B0D10;
+    --surface: #14171C;
+    --surface-hover: #191D24;
+    --border: #262B33;
+    --border-bright: #3A4150;
+    --text: #E8EAED;
+    --text-dim: #8B92A0;
+    --text-faint: #565D6B;
+    --signal: #4A9EFF;
+    --signal-dim: #2C5C8F;
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'Inter', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  ::selection { background: var(--signal-dim); color: #fff; }
+
+  /* subtle grid backdrop, like schematic paper */
+  .grid-bg {
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 48px 48px;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ---------- header ---------- */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 28px 0;
+  }
+
+  .header-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .logo {
+    font-family: var(--mono);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--signal);
+    box-shadow: 0 0 8px var(--signal);
+  }
+
+  nav {
+    display: flex;
+    gap: 28px;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+
+  nav a {
+    position: relative;
+    padding-bottom: 3px;
+    transition: color 0.15s ease;
+  }
+  nav a:hover { color: var(--text); }
+  nav a::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 0%;
+    height: 1px;
+    background: var(--signal);
+    transition: width 0.2s ease;
+  }
+  nav a:hover::after { width: 100%; }
+
+  /* ---------- hero ---------- */
+  .hero {
+    padding: 72px 0 56px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--signal);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .eyebrow::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: var(--signal);
+  }
+
+  h1 {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 44px;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    max-width: 680px;
+    margin-bottom: 20px;
+  }
+
+  h1 span { color: var(--text-dim); }
+
+  .hero p {
+    font-size: 16px;
+    color: var(--text-dim);
+    max-width: 540px;
+  }
+
+  .hero-meta {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+
+  .meta-item {
+    font-family: var(--mono);
+    font-size: 12px;
+  }
+
+  .meta-item .k {
+    color: var(--text-faint);
+    display: block;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 10px;
+  }
+
+  .meta-item .v { color: var(--text); }
+
+  /* ---------- section labels ---------- */
+  .section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .section:last-of-type { border-bottom: none; }
+
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  .section-title {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-title .idx {
+    color: var(--signal);
+  }
+
+  .section-count {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-faint);
+  }
+
+  /* ---------- project cards ---------- */
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+
+  .project {
+    background: var(--surface);
+    padding: 24px 24px;
+    display: grid;
+    grid-template-columns: 200px 1fr auto;
+    gap: 24px;
+    align-items: start;
+    transition: background 0.15s ease;
+    position: relative;
+    cursor: default;
+  }
+
+  .project:hover { background: var(--surface-hover); }
+
+  .project:hover .proj-name { color: var(--signal); }
+
+  .project::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 2px;
+    background: transparent;
+    transition: background 0.15s ease;
+  }
+  .project:hover::before { background: var(--signal); }
+
+  .proj-name {
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--text);
+    transition: color 0.15s ease;
+  }
+
+  .proj-sub {
+    font-size: 11px;
+    color: var(--text-faint);
+    font-family: var(--mono);
+    margin-top: 6px;
+  }
+
+  .proj-desc {
+    font-size: 14px;
+    color: var(--text-dim);
+    max-width: 480px;
+  }
+
+  .proj-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  .tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-dim);
+    border: 1px solid var(--border-bright);
+    padding: 3px 8px;
+    border-radius: 3px;
+    letter-spacing: 0.02em;
+  }
+
+  .proj-link {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    align-self: center;
+  }
+  .project:hover .proj-link { color: var(--signal); }
+
+  /* ---------- category grid (landing) ---------- */
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+
+  .cat-card {
+    background: var(--surface);
+    padding: 28px 22px;
+    transition: background 0.15s ease;
+  }
+
+  .cat-card:hover { background: var(--surface-hover); }
+
+  .cat-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--signal);
+    margin-bottom: 14px;
+  }
+
+  .cat-title {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+
+  .cat-desc {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin-bottom: 18px;
+    min-height: 40px;
+  }
+
+  .cat-link {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.15s ease, gap 0.15s ease;
+  }
+  .cat-card:hover .cat-link { color: var(--signal); gap: 9px; }
+
+  /* ---------- footer ---------- */
+  footer {
+    padding: 40px 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 22px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-dim);
+  }
+  .footer-links a:hover { color: var(--signal); }
+
+  .footer-note {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-faint);
+  }
+
+  @media (max-width: 760px) {
+    h1 { font-size: 32px; }
+    .cat-grid { grid-template-columns: 1fr; }
+    .project { grid-template-columns: 1fr; }
+    .proj-link { justify-self: start; }
+    nav { gap: 16px; font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+
+<div class="wrap">
+  <header>
+    <div class="header-row">
+      <div class="logo">Andy</div>
+      <nav>
+        <a href="#apps">Apps &amp; Tools</a>
+        <a href="#games">Games</a>
+        <a href="#hardware">Hardware</a>
+        <a href="#ml">ML &amp; Data</a>
+        <a href="#robotics">Robotics &amp; AI</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">EECS · UC Berkeley</div>
+    <h1>I like building things — <span>software and hardware.</span></h1>
+    <p>Apps, games, circuit boards, electronics, ML, etc. This is where I document what I've built.</p>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div class="section-title"><span class="idx">//</span>Portfolio</div>
+      <div class="section-count">5 categories</div>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="cat-num">01</div>
+        <div class="cat-title">Apps &amp; Tools</div>
+        <div class="cat-desc">Productivity applications for scheduling and management.</div>
+        <a class="cat-link" href="#apps">View projects →</a>
+      </div>
+      <div class="cat-card">
+        <div class="cat-num">02</div>
+        <div class="cat-title">Games</div>
+        <div class="cat-desc">Multiplayer experiences and platformers built in Unity.</div>
+        <a class="cat-link" href="#games">View projects →</a>
+      </div>
+      <div class="cat-card">
+        <div class="cat-num">03</div>
+        <div class="cat-title">Hardware</div>
+        <div class="cat-desc">Embedded boards, sensors, and physical prototypes.</div>
+        <a class="cat-link" href="#hardware">View projects →</a>
+      </div>
+      <div class="cat-card">
+        <div class="cat-num">04</div>
+        <div class="cat-title">Machine Learning &amp; Data Science</div>
+        <div class="cat-desc">Models and pipelines for real-world datasets.</div>
+        <a class="cat-link" href="#ml">View projects →</a>
+      </div>
+      <div class="cat-card">
+        <div class="cat-num">05</div>
+        <div class="cat-title">Robotics &amp; AI</div>
+        <div class="cat-desc">Control systems and autonomous agents.</div>
+        <a class="cat-link" href="#robotics">View projects →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="apps">
+    <div class="section-head">
+      <div class="section-title"><span class="idx">01</span>Apps &amp; Tools</div>
+      <div class="section-count">edit with your real projects</div>
+    </div>
+    <div class="project-list">
+      <div class="project">
+        <div>
+          <div class="proj-name">Project Name</div>
+          <div class="proj-sub">2025 — Personal</div>
+        </div>
+        <div>
+          <div class="proj-desc">One or two sentences on what it does and the specific problem it solves for the user.</div>
+          <div class="proj-tags">
+            <span class="tag">Swift</span>
+            <span class="tag">Firebase</span>
+          </div>
+        </div>
+        <div class="proj-link">Repo →</div>
+      </div>
+      <div class="project">
+        <div>
+          <div class="proj-name">Project Name</div>
+          <div class="proj-sub">2024 — Team of 3</div>
+        </div>
+        <div>
+          <div class="proj-desc">One or two sentences on what it does and the specific problem it solves for the user.</div>
+          <div class="proj-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+          </div>
+        </div>
+        <div class="proj-link">Live →</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="hardware">
+    <div class="section-head">
+      <div class="section-title"><span class="idx">03</span>Hardware</div>
+      <div class="section-count">edit with your real projects</div>
+    </div>
+    <div class="project-list">
+      <div class="project">
+        <div>
+          <div class="proj-name">Project Name</div>
+          <div class="proj-sub">2025 — Solo build</div>
+        </div>
+        <div>
+          <div class="proj-desc">What the board or device does, what sensors/actuators it uses, and what made it hard.</div>
+          <div class="proj-tags">
+            <span class="tag">STM32</span>
+            <span class="tag">KiCad</span>
+            <span class="tag">C</span>
+          </div>
+        </div>
+        <div class="proj-link">Writeup →</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Resume</a>
+      <a href="#">Email</a>
+    </div>
+    <div class="footer-note">Berkeley, CA — updated Jul 2026</div>
+  </footer>
+</div>
+
+</body>
+</html>
