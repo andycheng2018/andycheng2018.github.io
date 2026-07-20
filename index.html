@@ -303,6 +303,19 @@
   }
   .project:hover .proj-link { color: var(--signal); }
 
+  .proj-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8px;
+    align-self: stretch;
+  }
+
+  .proj-actions .proj-link:hover {
+    color: var(--signal);
+  }
+
   /* ---------- category grid (landing) ---------- */
   .cat-grid {
     display: grid;
@@ -388,6 +401,7 @@
     .cat-grid { grid-template-columns: 1fr; }
     .project { grid-template-columns: 1fr; }
     .proj-link { justify-self: start; }
+    .proj-actions { align-items: flex-start; }
     nav { gap: 16px; font-size: 12px; }
   }
 </style>
@@ -568,50 +582,60 @@
     <div class="project-list">
       <div class="project">
         <div>
-          <div class="proj-name">Cursed Game Board</div>
-          <div class="proj-sub">2026 — Solo Project</div>
+          <div class="proj-name">The Labyrinth</div>
+          <div class="proj-sub">2023 — Solo Project</div>
         </div>
         <div>
-          <div class="proj-desc">A placeholder for a chess-themed roguelike with procedural rooms, weapon upgrades, status effects, and enemy-specific behavior.</div>
+          <div class="proj-desc">A multiplayer platformer built during COVID, featuring Steam integration and a published store page.</div>
           <div class="proj-tags">
-            <span class="tag">Godot 4</span>
-            <span class="tag">GDScript</span>
-            <span class="tag">Game Design</span>
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Multiplayer</span>
+            <span class="tag">Steam API</span>
           </div>
         </div>
-        <div class="proj-link">Play →</div>
+        <div class="proj-actions">
+          <a class="proj-link" href="https://github.com/andycheng2018/The-Labyrinth" target="_blank" rel="noopener noreferrer">Repo →</a>
+          <a class="proj-link" href="https://store.steampowered.com/app/2664560/The_Labyrinth/" target="_blank" rel="noopener noreferrer">Steam →</a>
+        </div>
       </div>
 
       <div class="project">
         <div>
-          <div class="proj-name">Multiplayer Prototype</div>
-          <div class="proj-sub">2025 — Team Project</div>
+          <div class="proj-name">Mecha Smash</div>
+          <div class="proj-sub">Team Project</div>
         </div>
         <div>
-          <div class="proj-desc">A placeholder for a multiplayer game focused on responsive movement, synchronization, and competitive mechanics.</div>
+          <div class="proj-desc">A Smash Bros.–inspired local fighter with customizable character builds.</div>
           <div class="proj-tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
-            <span class="tag">Networking</span>
+            <span class="tag">Local Multiplayer</span>
+            <span class="tag">Character Builds</span>
           </div>
         </div>
-        <div class="proj-link">Repo →</div>
+        <div class="proj-actions">
+          <a class="proj-link" href="https://hackerzilla.itch.io/mecha-smash" target="_blank" rel="noopener noreferrer">Play →</a>
+        </div>
       </div>
 
       <div class="project">
         <div>
-          <div class="proj-name">Platformer Experiment</div>
-          <div class="proj-sub">2024 — Personal Project</div>
+          <div class="proj-name">Biodrift</div>
+          <div class="proj-sub">Procedural Generation Study</div>
         </div>
         <div>
-          <div class="proj-desc">A placeholder for a small platformer built to explore movement systems, level design, and moment-to-moment game feel.</div>
+          <div class="proj-desc">An exploration of procedural terrain generation and infinite world-building.</div>
           <div class="proj-tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
-            <span class="tag">Level Design</span>
+            <span class="tag">Procedural Generation</span>
           </div>
         </div>
-        <div class="proj-link">Demo →</div>
+        <div class="proj-actions">
+          <a class="proj-link" href="https://github.com/andycheng2018/Biodrift" target="_blank" rel="noopener noreferrer">Repo →</a>
+          <a class="proj-link" href="https://deleter2435.itch.io/biodrift" target="_blank" rel="noopener noreferrer">Play →</a>
+        </div>
       </div>
     </div>
   </section>
