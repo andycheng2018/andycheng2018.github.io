@@ -8,9 +8,9 @@ I'm an EECS undergraduate at UC Berkeley. I like building things — apps, games
 
 ### Portfolio Categories
 
-<div class="category-grid">
+<div class="category-grid" markdown="1">
 
-<div class="category-card">
+<div class="category-card" markdown="1">
 <span class="category-num">01</span>
 
 #### [Games]({{ '/games/' | relative_url }})
@@ -19,7 +19,7 @@ Multiplayer and single-player games built in Unity, from a Steam release to a sc
 [View Projects →]({{ '/games/' | relative_url }})
 </div>
 
-<div class="category-card">
+<div class="category-card" markdown="1">
 <span class="category-num">02</span>
 
 #### [Apps & Tools]({{ '/apps/' | relative_url }})
@@ -28,7 +28,7 @@ Applications built to solve a specific, everyday problem.
 [View Projects →]({{ '/apps/' | relative_url }})
 </div>
 
-<div class="category-card">
+<div class="category-card" markdown="1">
 <span class="category-num">03</span>
 
 #### [Machine Learning & Data Science]({{ '/models/' | relative_url }})
@@ -37,7 +37,7 @@ Data analysis and research work, including a NASA-affiliated internship analyzin
 [View Projects →]({{ '/models/' | relative_url }})
 </div>
 
-<div class="category-card">
+<div class="category-card" markdown="1">
 <span class="category-num">04</span>
 
 #### [Hardware]({{ '/hardware/' | relative_url }})
