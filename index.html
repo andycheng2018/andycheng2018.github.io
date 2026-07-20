@@ -314,11 +314,17 @@
 
   .cat-card {
     background: var(--surface);
-    padding: 28px 22px;
-    transition: background 0.15s ease;
+    padding: 30px 24px;
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.15s ease, transform 0.15s ease;
   }
 
-  .cat-card:hover { background: var(--surface-hover); }
+  .cat-card:hover {
+    background: var(--surface-hover);
+    transform: translateY(-2px);
+  }
 
   .cat-num {
     font-family: var(--mono);
@@ -337,8 +343,7 @@
   .cat-desc {
     font-size: 13px;
     color: var(--text-dim);
-    margin-bottom: 18px;
-    min-height: 40px;
+    margin-bottom: 24px;
   }
 
   .cat-link {
@@ -348,6 +353,7 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    margin-top: auto;
     transition: color 0.15s ease, gap 0.15s ease;
   }
   .cat-card:hover .cat-link { color: var(--signal); gap: 9px; }
@@ -397,11 +403,9 @@
         <div class="logo-school">EECS @ UC Berkeley</div>
       </div>
       <nav>
-        <a href="#apps">Apps &amp; Tools</a>
-        <a href="#games">Games</a>
-        <a href="#hardware">Hardware</a>
-        <a href="#ml">ML &amp; Data</a>
         <a href="#robotics">Robotics &amp; AI</a>
+        <a href="#hardware">Hardware</a>
+        <a href="#games">Games</a>
       </nav>
     </div>
   </header>
@@ -411,102 +415,203 @@
     <p>A collection of projects across software, games, hardware, machine learning, and robotics.</p>
   </section>
 
-  <section class="section">
+  <section class="section portfolio-overview">
     <div class="section-head">
       <div class="section-title"><span class="idx">//</span>Portfolio</div>
-      <div class="section-count">5 categories</div>
+      <div class="section-count">3 categories</div>
     </div>
+
     <div class="cat-grid">
-      <div class="cat-card">
+      <a class="cat-card" href="#robotics">
         <div class="cat-num">01</div>
-        <div class="cat-title">Apps &amp; Tools</div>
-        <div class="cat-desc">Productivity applications for scheduling and management.</div>
-        <a class="cat-link" href="#apps">View projects →</a>
-      </div>
-      <div class="cat-card">
-        <div class="cat-num">02</div>
-        <div class="cat-title">Games</div>
-        <div class="cat-desc">Multiplayer experiences and platformers built in Unity.</div>
-        <a class="cat-link" href="#games">View projects →</a>
-      </div>
-      <div class="cat-card">
-        <div class="cat-num">03</div>
-        <div class="cat-title">Hardware</div>
-        <div class="cat-desc">Embedded boards, sensors, and physical prototypes.</div>
-        <a class="cat-link" href="#hardware">View projects →</a>
-      </div>
-      <div class="cat-card">
-        <div class="cat-num">04</div>
-        <div class="cat-title">Machine Learning &amp; Data Science</div>
-        <div class="cat-desc">Models and pipelines for real-world datasets.</div>
-        <a class="cat-link" href="#ml">View projects →</a>
-      </div>
-      <div class="cat-card">
-        <div class="cat-num">05</div>
         <div class="cat-title">Robotics &amp; AI</div>
-        <div class="cat-desc">Control systems and autonomous agents.</div>
-        <a class="cat-link" href="#robotics">View projects →</a>
-      </div>
+        <div class="cat-desc">Autonomous systems, robot control, computer vision, and AI-powered tools.</div>
+        <div class="cat-link">View projects →</div>
+      </a>
+
+      <a class="cat-card" href="#hardware">
+        <div class="cat-num">02</div>
+        <div class="cat-title">Hardware &amp; Devices</div>
+        <div class="cat-desc">Custom gadgets, electronics, embedded systems, and physical prototypes.</div>
+        <div class="cat-link">View projects →</div>
+      </a>
+
+      <a class="cat-card" href="#games">
+        <div class="cat-num">03</div>
+        <div class="cat-title">Games</div>
+        <div class="cat-desc">Playable systems, mechanics, and game worlds built from the ground up.</div>
+        <div class="cat-link">View projects →</div>
+      </a>
     </div>
   </section>
 
-  <section class="section" id="apps">
+  <section class="section" id="robotics">
     <div class="section-head">
-      <div class="section-title"><span class="idx">01</span>Apps &amp; Tools</div>
-      <div class="section-count">edit with your real projects</div>
+      <div class="section-title"><span class="idx">01</span>Robotics &amp; AI</div>
+      <div class="section-count">3 projects</div>
     </div>
+
     <div class="project-list">
       <div class="project">
         <div>
-          <div class="proj-name">Project Name</div>
-          <div class="proj-sub">2025 — Personal</div>
+          <div class="proj-name">Autonomous Robot Agent</div>
+          <div class="proj-sub">2026 — Personal Project</div>
         </div>
         <div>
-          <div class="proj-desc">One or two sentences on what it does and the specific problem it solves for the user.</div>
+          <div class="proj-desc">A placeholder for a robotics project involving autonomous task execution, command planning, and safety checks.</div>
           <div class="proj-tags">
-            <span class="tag">Swift</span>
-            <span class="tag">Firebase</span>
+            <span class="tag">Python</span>
+            <span class="tag">Robotics</span>
+            <span class="tag">AI Agents</span>
           </div>
         </div>
         <div class="proj-link">Repo →</div>
       </div>
+
       <div class="project">
         <div>
-          <div class="proj-name">Project Name</div>
-          <div class="proj-sub">2024 — Team of 3</div>
+          <div class="proj-name">Computer Vision Pickup</div>
+          <div class="proj-sub">2026 — Experimental Build</div>
         </div>
         <div>
-          <div class="proj-desc">One or two sentences on what it does and the specific problem it solves for the user.</div>
+          <div class="proj-desc">A placeholder for a vision-guided robot that detects an object, aligns itself, and completes a pickup task.</div>
           <div class="proj-tags">
-            <span class="tag">React</span>
-            <span class="tag">Node.js</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">Control</span>
+            <span class="tag">Vision</span>
           </div>
         </div>
-        <div class="proj-link">Live →</div>
+        <div class="proj-link">Demo →</div>
+      </div>
+
+      <div class="project">
+        <div>
+          <div class="proj-name">Offline Mission Planner</div>
+          <div class="proj-sub">2026 — Systems Project</div>
+        </div>
+        <div>
+          <div class="proj-desc">A placeholder for a system that compiles robot commands into a mission that can continue without network access.</div>
+          <div class="proj-tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Planning</span>
+            <span class="tag">Resilience</span>
+          </div>
+        </div>
+        <div class="proj-link">Writeup →</div>
       </div>
     </div>
   </section>
 
   <section class="section" id="hardware">
     <div class="section-head">
-      <div class="section-title"><span class="idx">03</span>Hardware</div>
-      <div class="section-count">edit with your real projects</div>
+      <div class="section-title"><span class="idx">02</span>Hardware &amp; Devices</div>
+      <div class="section-count">3 projects</div>
     </div>
+
     <div class="project-list">
       <div class="project">
         <div>
-          <div class="proj-name">Project Name</div>
-          <div class="proj-sub">2025 — Solo build</div>
+          <div class="proj-name">3×3 Macro Pad</div>
+          <div class="proj-sub">2026 — Solo Build</div>
         </div>
         <div>
-          <div class="proj-desc">What the board or device does, what sensors/actuators it uses, and what made it hard.</div>
+          <div class="proj-desc">A placeholder for a custom macro pad with mechanical switches, a rotary encoder, indicator LEDs, and a 3D-printed case.</div>
           <div class="proj-tags">
-            <span class="tag">STM32</span>
-            <span class="tag">KiCad</span>
-            <span class="tag">C</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Fusion 360</span>
+            <span class="tag">Electronics</span>
           </div>
         </div>
-        <div class="proj-link">Writeup →</div>
+        <div class="proj-link">Build Log →</div>
+      </div>
+
+      <div class="project">
+        <div>
+          <div class="proj-name">Custom Sensor Device</div>
+          <div class="proj-sub">2026 — Prototype</div>
+        </div>
+        <div>
+          <div class="proj-desc">A placeholder for an embedded device that collects sensor readings and displays or transmits useful data.</div>
+          <div class="proj-tags">
+            <span class="tag">Microcontroller</span>
+            <span class="tag">Sensors</span>
+            <span class="tag">C/C++</span>
+          </div>
+        </div>
+        <div class="proj-link">Details →</div>
+      </div>
+
+      <div class="project">
+        <div>
+          <div class="proj-name">LED Circuit Study</div>
+          <div class="proj-sub">2026 — Electronics Study</div>
+        </div>
+        <div>
+          <div class="proj-desc">A placeholder for a small electronics project exploring voltage, current, resistors, and different LED configurations.</div>
+          <div class="proj-tags">
+            <span class="tag">Breadboard</span>
+            <span class="tag">Circuits</span>
+            <span class="tag">Testing</span>
+          </div>
+        </div>
+        <div class="proj-link">Notes →</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="games">
+    <div class="section-head">
+      <div class="section-title"><span class="idx">03</span>Games</div>
+      <div class="section-count">3 projects</div>
+    </div>
+
+    <div class="project-list">
+      <div class="project">
+        <div>
+          <div class="proj-name">Cursed Game Board</div>
+          <div class="proj-sub">2026 — Solo Project</div>
+        </div>
+        <div>
+          <div class="proj-desc">A placeholder for a chess-themed roguelike with procedural rooms, weapon upgrades, status effects, and enemy-specific behavior.</div>
+          <div class="proj-tags">
+            <span class="tag">Godot 4</span>
+            <span class="tag">GDScript</span>
+            <span class="tag">Game Design</span>
+          </div>
+        </div>
+        <div class="proj-link">Play →</div>
+      </div>
+
+      <div class="project">
+        <div>
+          <div class="proj-name">Multiplayer Prototype</div>
+          <div class="proj-sub">2025 — Team Project</div>
+        </div>
+        <div>
+          <div class="proj-desc">A placeholder for a multiplayer game focused on responsive movement, synchronization, and competitive mechanics.</div>
+          <div class="proj-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Networking</span>
+          </div>
+        </div>
+        <div class="proj-link">Repo →</div>
+      </div>
+
+      <div class="project">
+        <div>
+          <div class="proj-name">Platformer Experiment</div>
+          <div class="proj-sub">2024 — Personal Project</div>
+        </div>
+        <div>
+          <div class="proj-desc">A placeholder for a small platformer built to explore movement systems, level design, and moment-to-moment game feel.</div>
+          <div class="proj-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Level Design</span>
+          </div>
+        </div>
+        <div class="proj-link">Demo →</div>
       </div>
     </div>
   </section>
