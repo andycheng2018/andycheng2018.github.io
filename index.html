@@ -92,6 +92,23 @@
     color: var(--text-faint);
   }
 
+  .top-contacts {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-faint);
+  }
+
+  .top-contacts a {
+    transition: color 0.15s ease;
+  }
+
+  .top-contacts a:hover {
+    color: var(--signal);
+  }
+
   nav {
     display: flex;
     gap: 28px;
@@ -425,6 +442,13 @@
       <div class="logo">
         <div class="logo-name">Andy Cheng</div>
         <div class="logo-school">EECS @ UC Berkeley</div>
+        <div class="top-contacts">
+          <a href="https://github.com/andycheng2018" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span>·</span>
+          <a href="https://www.linkedin.com/in/andy-cheng25" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span>·</span>
+          <a href="mailto:andy_cheng@berkeley.edu">Email</a>
+        </div>
       </div>
       <nav>
         <a href="#robotics">Robotics &amp; AI</a>
